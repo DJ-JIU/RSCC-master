@@ -13,8 +13,6 @@ from transformers import AutoModel, AutoTokenizer
 from torchvision.transforms import Compose, Resize, ToTensor, Normalize, Lambda
 from torchvision.transforms.functional import InterpolationMode
 
-os.environ["TRANSFORMERS_OFFLINE"] = "1"
-os.environ["HF_HUB_OFFLINE"] = "1"
 
 
 def build_transform(input_size=448):
@@ -100,13 +98,13 @@ def main():
         "OpenGVLab/InternVL3-1B",
         torch_dtype=torch.bfloat16,
         trust_remote_code=True,
-        local_files_only=True,
+        
     ).eval().to("cuda:0")
 
     tokenizer = AutoTokenizer.from_pretrained(
         "OpenGVLab/InternVL3-1B",
         trust_remote_code=True,
-        local_files_only=True,
+        
     )
 
     print(f"显存: {torch.cuda.memory_allocated()/1024**3:.1f} GB")
