@@ -1,0 +1,17 @@
+.env
+*.pyc
+__pycache__/
+logs/
+notebook/
+hf-datasets/
+token_usage.json
+data/
+RSCC-Data/
+output/
+data/
+RSCC-Data/
+output/
+data/
+
+RSCC-Data/xbd_subset.tgz
+models/

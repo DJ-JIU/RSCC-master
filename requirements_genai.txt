@@ -1,0 +1,70 @@
+# ============================================
+# genai 环境移植 requirements.txt
+# Python 3.10.13
+# 目标: Ubuntu + CUDA 12.1 GPU
+# ============================================
+
+# ===== 深度学习框架 =====
+torch==2.3.1
+torchvision==0.18.1
+torchaudio==2.3.1
+xformers==0.0.35
+
+# ===== HuggingFace 生态 =====
+transformers==4.48.2
+accelerate==0.32.1
+datasets==2.20.0
+huggingface_hub==0.36.2
+tokenizers==0.21.4
+safetensors==0.7.0
+
+# ===== 视觉 & 多模态 =====
+qwen-vl-utils==0.0.14
+decord==0.6.0
+av==17.0.1
+opencv-python==4.10.0
+opencv-python-headless==4.10.0
+pillow==12.2.0年
+
+# ===== 评估指标 =====
+sentence-transformers==3.3.1
+bert-score==0.3.13
+evaluate==0.4.6
+rouge_score==0.1.2
+nltk==3.9.4
+scikit-learn==1.7.2
+
+# ===== API 调用 =====
+openai==2.40.0
+python-dotenv==1.2.2
+httpx==0.28.1
+httpcore==1.0.9
+requests==2.32.3
+urllib3==2.2.2
+
+# ===== 数据处理 =====
+numpy==1.26.4
+pandas==2.3.3
+shapely==2.1.2
+tqdm==4.67.3
+matplotlib==3.10.8
+fire==0.7.1
+tiktoken==0.13.0
+sentencepiece==0.2.1
+pyarrow==15.0.0
+regex==2026.5.9
+scipy==1.15.3
+PyYAML==6.0.1
+
+# ===== 其他依赖 =====
+absl-py==2.4.0
+click==8.4.1
+Jinja2==3.1.6
+jsonschema==4.21.1
+MarkupSafe==3.0.3
+mpmath==1.3.0
+networkx==3.4.2
+rich==15.0.0
+sympy==1.14.0
+typing_extensions==4.15.0
+wheel==0.43.0
